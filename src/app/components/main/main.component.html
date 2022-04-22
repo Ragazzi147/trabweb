@@ -1,0 +1,214 @@
+<form>
+    <header></header>
+    <div id="main">
+        <article>
+            <h1>Contrato de compra do veículo</h1>
+            <h2>Data de aquisição do veiculo</h2>
+            <div class="d_dav">
+                <input type="time" class="dt_time">
+                <input type="date" class="dt_date">  
+            </div>  
+            <fieldset class="d_compra">
+                <legend>Dados do comprador</legend>
+                
+                <div class="item linhah">
+    
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text" name="Nome" class="name" placeholder="Emerson Marques">
+    
+                </div>
+                
+                <div class="item linhah">
+    
+                    <label for="cpf">CPF:</label>
+                    <input id="cpf" type="number" name="cpf" placeholder="467.821.341-18">
+    
+                </div>
+                
+                <div class="item linhah">
+    
+                    <label for="dateNas">Data de nascimento:</label>
+                    <input id="dataNs" type="date" name="Data de nascimento">
+    
+                </div>
+                
+                <div class="item linhah">
+                    
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="batata@gmail.com" pattern=".+@gmail.com" size="30" required>
+    
+                </div>
+                
+                <div class="item linhah">
+                   
+                    <label for="agencia">Agência:</label>
+                    <input id="agencia" type="number" placeholder="234" name="agencia">
+                    
+                    <div class="mgesq"> 
+    
+                        <label for="conta">Conta:</label>                     
+                        <input id="conta" type="number" placeholder="54321-5" minlength="7" maxlength="7" name="conta">
+                   
+                    </div>
+                    
+                </div>
+                    <div class="item linhah">
+    
+                        <label for="endereco">Endereço:</label>                             
+                        <input type="text" name="Endereço">
+                        
+                   
+                        <div class="mgesq">
+                        
+                            <label for="bairro">Bairro:</label>
+                        
+                        </div>   
+                    
+                            <input type="text" name="bairro">
+                           
+                        <div class="mgesq">
+    
+                            <label> N°:</label>
+                            
+                        </div>
+                            
+                            <input class="in_n" type="number" name="numero">
+                        
+                        <div class="mgesq">
+    
+                            <label for="endereco">CEP:</label>
+    
+                        </div>        
+    
+                            <input type="number" name="cep">
+    
+                    </div>
+            </fieldset>
+            <fieldset class="d_vendedor">
+                <legend>Dados da Empresa</legend>
+                
+                <div class="linhah">
+                    
+                    <label for="r_social">Razão social:</label>
+                    <input type="text" name="Razão social">
+    
+                </div>
+    
+                <div class="linhah">
+                    
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="number" name="cnpj">
+    
+                </div>
+                
+                <div class="linhah">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" pattern=".+@gmail.com" size="30" required>
+    
+                </div>
+                
+                <div class="linhah">
+    
+                    <label for="endereco">Endereço:</label>                             
+                    <input type="text" name="Endereço">
+                    
+               
+                    <div class="mgesq">
+                    
+                        <label for="bairro">Bairro:</label>
+                    
+                    </div>   
+                
+                        <input type="text" name="bairro">
+                       
+                    <div class="mgesq">
+    
+                        <label> N°:</label>
+                        
+                    
+                    </div>
+    
+                        <input class="in_n" type="number" name="numero">
+    
+                    <div class="mgesq">
+    
+                        <label for="endereco">CEP:</label>
+    
+                </div>        
+    
+                <input type="number" name="cep">
+    
+            </div>
+    
+            </fieldset>
+    
+            <fieldset class="d_carro">
+    
+                <legend>Dados do carro</legend>
+    
+                <div class="linhah">
+    
+                    <label for="marca">Marca:</label>
+                    <input type="text" name="Marca" class="name">
+    
+                </div>
+                <div class="linhah">
+    
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" name="Modelo">
+    
+                </div>
+    
+                <div class="linhah">
+                   
+                    <label for="dateNas">Ano do carro:</label>
+                    <input type="number" min="1900" max="2030" name="Ano do carro">
+    
+                </div>
+    
+                <div class="d_categoria linhah">
+    
+                    <label for="">Categoria: </label>
+                            <select name="select" id="select">
+                            <option value="v0">Selecionar</option>
+                            <option value="v1">Sedan</option>
+                            <option value="v2">Hatche</option>
+                            <option value="v3">Picape</option>
+                            <option value="v4">SUV</option>
+                            <option value="v5">Cupê</option>
+                            <option value="v6">Conversíveis</option>
+                            <option value="v7">Station wagons</option>
+                            <option value="v8">Minivans</option>
+                            </select>
+                    
+                </div> 
+                <div class="linhah">
+    
+                    <label for="N° da placa">N° da placa:</label>
+                    <input type="number" name="N° da placa">
+    
+                </div>
+            
+                <div>
+    
+                    <label for="Cor">Cor:</label>
+                    <input type="color" name="Cor">
+    
+                </div>
+            </fieldset>
+    
+            <div class="d_botao">  
+    
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+    
+            </div>
+    
+        </article>
+            <nav></nav>
+            <aside></aside>
+    </div>
+    <footer></footer>
+   
+</form>
